@@ -1,19 +1,41 @@
-#Convolutional Neural Network for MNIST Classification
+# Data Visualization: F1 World Championship (1950-2023)
 
-This repository contains a simple convolutional neural network (CNN) model implemented using TensorFlow and Keras to classify images from the MNIST dataset. The MNIST dataset consists of 70,000 grayscale images of handwritten digits with a size of 28x28 pixels. The images are split into 60,000 training samples and 10,000 testing samples.
+This repository contains a data visualization project that explores the history and statistics of Formula 1 World Championship from its inception in 1950 up to 2023.
 
-The model architecture consists of two convolutional blocks followed by two fully connected (dense) layers. Each convolutional block consists of two convolutional layers with batch normalization and ReLU activation followed by max pooling and dropout. The first convolutional block has 32 filters with a kernel size of 5x5 and the second block has 64 filters with a kernel size of 3x3. The fully connected layers consist of 256 and 10 neurons respectively, with dropout applied to the first dense layer to reduce overfitting. The model is trained using categorical cross-entropy loss and optimized using the Adam optimizer.
+## Project Overview
 
-To improve the model's generalization ability and prevent overfitting, an image data generator is used to augment the training data by randomly rotating, zooming, and shifting the images. An early stopping callback is used during training to stop the training process if the validation loss doesn't improve after 5 epochs.
+The main objective of this project is to provide insights into the world of Formula 1 by visualizing various aspects of the championship, such as:
 
-##Getting Started
-###Prerequisites
-Python 3.x
-TensorFlow 2.x
-Keras
-NumPy
-Matplotlib
+- Championship standings
+- Team and driver performance
+- Race results and statistics
+- Impacts of starting position on race results
+- Home advantage
 
-##Results
-The model achieves an accuracy of approximately 99.54% on the test set after training for 33 epochs.
+## Data Sources
 
+The data used in this project is sourced from multiple reliable sources, including:
+
+- [Ergast Developer API](https://ergast.com/mrd/)
+- Formula 1 official website
+- Historical archives and websites
+
+Please note that the data may be subject to changes and updates over time.
+
+## Requirements
+
+To run the project, you will need the following software and libraries:
+
+- Python 3.x
+- Jupyter Notebook (or any other notebook environment)
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly (optional)
+
+## Usage
+
+1. Clone the repository to your local machine.
+2. Install the required libraries using `pip install -r requirements.txt` or via your preferred package manager.
+3. Open the Jupyter Notebook `Data_Visualisation_F1_World_Championship_1950-2023.ipynb` and run the cells to generate the visualizations.
